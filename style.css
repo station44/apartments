@@ -92,6 +92,7 @@ header{
 }
 
 .about-us .section-inner{
+    width: calc(80% + 20px);
     display: flex;
     flex-flow: column;
     gap: 20px;
@@ -117,8 +118,23 @@ header{
     flex-flow: column;
     justify-content: start;
     align-items: center;
-    background-color: #333;
+    background: linear-gradient(300deg, #000, #557271, #333);
+    background-size: 300% 300%;
+    animation: gradient-animation 3s ease infinite;
+    /* background-color: #333; */
     color: #24ff81;
+}
+
+@keyframes gradient-animation{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
 }
 
 .section-carusel-inner{
@@ -150,7 +166,9 @@ header{
 }
 
 .location{
-    background-color: #333;
+    background: linear-gradient(300deg, #000, #557271, #333);
+    background-size: 300% 300%;
+    animation: gradient-animation 7s ease infinite;
     color: #24ff81;
 }
 
@@ -182,7 +200,9 @@ header{
 
 .social-media{
     border-top:  1px solid #129448;
-    background-color: #333;
+    background: linear-gradient(60deg, #000, #557271, #333);
+    background-size: 300% 300%;
+    animation: gradient-animation 7s ease infinite;
     color: #24ff81;
 }
 
