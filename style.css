@@ -166,7 +166,7 @@ header{
 }
 
 .location{
-    background: linear-gradient(300deg, #000, #557271, #333);
+    background: radial-gradient(#333 1%, #557271 95%, #93c4c2 155%, #333 6%);
     background-size: 300% 300%;
     animation: gradient-animation 7s ease infinite;
     color: #24ff81;
@@ -200,7 +200,7 @@ header{
 
 .social-media{
     border-top:  1px solid #129448;
-    background: linear-gradient(60deg, #000, #557271, #333);
+    background: radial-gradient(#333 1%, #557271 95%, #93c4c2 155%, #333 6%);
     background-size: 300% 300%;
     animation: gradient-animation 7s ease infinite;
     color: #24ff81;
@@ -279,6 +279,10 @@ footer ul{
 }
 
 @media  screen and (max-width: 500px) {
+    .section-carusel{
+        animation: gradient-animation 2s ease infinite;
+    }
+    
     .section-carusel-inner{
         display: flex;
         flex-flow: column;
@@ -286,6 +290,14 @@ footer ul{
 
     .about-us{
         font-size: 0.8em;
+    }
+
+    .location{
+        animation: gradient-animation 4s ease infinite;
+    }
+
+    .social-media{
+        animation: gradient-animation 4s ease infinite;
     }
 
     .social-media-links{
